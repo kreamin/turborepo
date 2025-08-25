@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react";
 import {
   StyleSheet,
@@ -5,6 +6,8 @@ import {
   Text,
   Pressable,
 } from "react-native";
+
+import "nativewind"
 
 export interface ButtonProps {
   text: string;

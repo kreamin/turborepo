@@ -9,7 +9,20 @@ export default defineConfig((options: Options) => ({
   },
   clean: true,
   format: ["cjs", "esm"],
-  external: ["react"],
+  external: ["react",
+    "react-native",
+    "react-native-web",
+    "nativewind",
+    "react-native-css-interop",
+  ],
   dts: true,
+  esbuildOptions(esbuild) {
+    esbuild.jsx = "automatic";
+    esbuild.jsxImportSource = "nativewind";
+    esbuild.loader = {
+      ...(esbuild.loader || {}),
+      ".js": "jsx",
+    }
+  },
   ...options,
 }));

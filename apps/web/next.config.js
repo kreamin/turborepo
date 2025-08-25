@@ -1,10 +1,23 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: [
+    "react-native",
+    "react-native-web",
+    "@repo/ui",
+    "nativewind",
+    "react-native-css-interop",
+  ],
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      // Transform all direct `react-native` imports to `react-native-web`
       "react-native$": "react-native-web",
+      expo: false,
+      "expo/AppEntry": false,
+      "expo-constants": false,
+      "expo-linking": false,
+      "expo-status-bar": false,
+      "expo-router": false,
     };
     config.resolve.extensions = [
       ".web.js",
@@ -16,3 +29,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = nextConfig;

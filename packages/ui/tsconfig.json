@@ -1,3 +1,5 @@
+/// <reference types="nativewind/types" />
+
 {
   "extends": "@repo/typescript-config/react-native-library.json",
   "include": ["."],
