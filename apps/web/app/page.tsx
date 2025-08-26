@@ -1,12 +1,14 @@
 "use client";
 
 import {Something} from "@repo/ui"
+import { View, Text } from "react-native";
+import "react-native-web"
 
 export default function Web() {
   return (
-    <div>
-      <h1>Web</h1>
-        <Something/>
-    </div>
+    <View>
+        <Text>Web</Text>
+        <Something colour='red' />
+    </View>
   );
 }

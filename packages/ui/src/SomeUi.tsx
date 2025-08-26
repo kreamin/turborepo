@@ -1,15 +1,19 @@
+"use client"
 import * as React from "react";
-import {
-  View,
-  Text
-} from "react-native";
+import { View, Text } from "react-native";
+import "nativewind";
 
-import "nativewind"
+const colours = {
+  blue: "text-blue-500",
+  red: "text-red-500",
+} as const;
 
-export function Something() {
+type Colour = keyof typeof colours;
+
+export function Something({ colour = "blue" }: { colour?: Colour }) {
   return (
     <View>
-      <Text className={'text-blue-500'}>text should be blue!!!!</Text>
+      <Text className={colours[colour]}>text {colour}!!!</Text>
     </View>
-  )
+  );
 }

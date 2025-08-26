@@ -12,10 +12,11 @@
     "@repo/ui": "workspace:*",
     "nativewind": "^4.1.23",
     "next": "^15.4.6",
+    "prettier": "^3.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native-css-interop": "^0.1.22",
-    "react-native-web": "^0.21.1"
+    "react-dom": "^18.3.1",
+    "react-native": "0.76.9",
+    "react-native-css-interop": "^0.1.22"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

@@ -17,8 +17,11 @@
   "packageManager": "pnpm@10.8.1",
   "dependencies": {
     "babel": "^6.23.0",
+    "eslint": "^9.34.0",
     "expo": "~52.0.46",
     "nativewind": "^4.1.23",
-    "next": "^15.4.6"
+    "next": "^15.4.6",
+    "react-native-web": "0.21.1",
+    "tailwindcss": "3.4.17"
   }
 }
