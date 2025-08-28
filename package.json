@@ -21,6 +21,7 @@
     "expo": "~52.0.46",
     "nativewind": "^4.1.23",
     "next": "^15.4.6",
+    "react-devtools": "^6.1.5",
     "react-native-web": "0.21.1",
     "tailwindcss": "3.4.17"
   }

@@ -5,7 +5,7 @@ import "nativewind";
 
 const colours = {
   blue: "text-blue-500",
-  red: "text-red-500",
+  red: "text-red-500 bg-black-500",
 } as const;
 
 type Colour = keyof typeof colours;
