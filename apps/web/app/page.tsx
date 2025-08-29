@@ -1,4 +1,3 @@
-"use client";
 
 import {Something} from "@repo/ui"
 import { View, Text } from "react-native";

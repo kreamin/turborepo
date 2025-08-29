@@ -1,4 +1,3 @@
-"use client"
 import * as React from "react";
 import { View, Text } from "react-native";
 import "nativewind";
@@ -13,7 +12,7 @@ type Colour = keyof typeof colours;
 export function Something({ colour = "blue" }: { colour?: Colour }) {
   return (
     <View>
-      <Text className={colours[colour]}>text {colour}!!!</Text>
+      <Text className={colours[colour]} >text {colour}!!!</Text>
     </View>
   );
 }

@@ -20,9 +20,10 @@
     "eslint": "^9.34.0",
     "expo": "~52.0.46",
     "nativewind": "^4.1.23",
+    "tailwindcss": "3.4.17",
     "next": "^15.4.6",
+    "react-native-reanimated": "^4.0.3",
     "react-devtools": "^6.1.5",
-    "react-native-web": "0.21.1",
-    "tailwindcss": "3.4.17"
+    "react-native-web": "0.21.1"
   }
 }
